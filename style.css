@@ -4,118 +4,118 @@ body{
   background: linear-gradient(to left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-body::after{
-  content: "";
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#2196f3, #e91e63);
-  clip-path: circle(20% at 10% 10%);
+/*--------- making few beautiful animation in the background */
+    body::after{
+      content: "";
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#2196f3, #e91e63);
+      clip-path: circle(20% at 10% 10%);
 
-}
+    }
 
-body::before{
-  content: "";
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#f00, #f0f);
-  background: linear-gradient(rgb(246, 2, 2), rgb(251, 108, 232));
-  clip-path: circle(40% at right 90% );
-}
+    body::before{
+      content: "";
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#f00, #f0f);
+      background: linear-gradient(rgb(246, 2, 2), rgb(251, 108, 232));
+      clip-path: circle(40% at right 90% );
+    }
 
-/*  main container to hold watch*/
-#container{
-  position: absolute;
-  left:30%;
-  top:20%;
-  padding:15px;
-  width:45vw;
-  height: 45%;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background:rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  transition: 0.5s; 
-  display: flex;
-  flex-direction: column;
-}
+/*  -------------main container-div to hold watch----------*/
+    #container{
+      position: absolute;
+      left:30%;
+      top:20%;
+      padding:15px;
+      width:45vw;
+      height: 45%;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      background:rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(8px);
+      transition: 0.5s; 
+      display: flex;
+      flex-direction: column;
+    }
 
-#header{
-  font-family: cursive;
-  text-align: center;
-  color: rgb(240, 238, 238);
-  font-size: 3rem;
-}
-#watch-cntnr{
-  position: relative;
-  height:50%;
-  margin-top: 8%;
-  display: flex;
-  justify-content: center;
-  
-}
+/* container watch in a nested div */
+    #watch-cntnr{
+      position: relative;
+      height:50%;
+      margin-top: 8%;
+      display: flex;
+      justify-content: center;
+    }
 
-#watch{
-  letter-spacing: 10px;
-  color: rgb(240, 238, 238);
-  font-size: 5.8rem;
-}
-#btn-cntnr{
-  margin-bottom: 10%;
-  height:50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.button{
-  cursor: pointer;
-  width:11vw;
-  margin-right:0.5vw;
-  height: 2.5vw;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  margin-left: 1vw;
-}
+    #watch{
+      letter-spacing: 15px;
+      color: rgb(240, 238, 238);
+      font-size: 5.8rem;
+    }
 
-.start{
-  background-color:rgb(2, 151, 102);
-  color: white;
-}
-.start:hover{
-  color:rgb(2, 151, 102);
-  background-color: white;
-  transition: all 0.8s;
-  box-shadow: 0 0 15px 2px rgb(166, 245, 205);
-}
 
-.stop{
-  background-color:rgb(111, 10, 226);
-  color: white;
-  
-}
+/* -------------button container Div------------- */
+    #btn-cntnr{
+      margin-top: -10%;
+      height:50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button{
+      cursor: pointer;
+      width:11vw;
+      margin-right:0.5vw;
+      height: 2.5vw;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      margin-left: 1vw;
+    }
 
-.stop:hover{
-  background-color:rgb(128, 62, 204);
+/* -----Start Button--------- */
+    .start{
+      background-color:rgb(2, 151, 102);
+      color: white;
+    }
+    .start:hover{
+      color:rgb(2, 151, 102);
+      background-color: white;
+      transition: all 0.8s;
+      box-shadow: 0 0 15px 2px rgb(166, 245, 205);
+    }
 
-  box-shadow: 0 0 15px 2px rgb(245, 245, 245);
-  transition: all 0.8s;
-}
-.reset{
-  background-color: red;
-  color: white;
-}
-.reset:hover{
-  background-color: rgb(243, 17, 175);
-  color: white;
-  transition: all 0.8s;
-  box-shadow: 0 0 15px 2px rgb(255, 255, 255) ;
-  border:0px solid black;
-}
+/* -----Stop Button--------- */
+    .stop{
+      background-color:rgb(111, 10, 226);
+      color: white;
+    }
+
+    .stop:hover{
+      background-color:rgb(128, 62, 204);
+      box-shadow: 0 0 15px 2px rgb(245, 245, 245);
+      transition: all 0.8s;
+    }
+
+/* -----Reset Button--------- */
+    .reset{
+      background-color: red;
+      color: white;
+    }
+    .reset:hover{
+      background-color: rgb(243, 17, 175);
+      color: white;
+      transition: all 0.8s;
+      box-shadow: 0 0 15px 2px rgb(255, 255, 255) ;
+      border:0px solid black;
+    }
