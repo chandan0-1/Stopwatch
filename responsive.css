@@ -1,0 +1,121 @@
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+  #container{
+      width:80vw;
+      left:10vw;
+      top:15;
+      height:70vh
+  }
+  #watch{
+      letter-spacing: 10px;
+      color: rgb(240, 238, 238);
+      font-size: 5rem;
+    }
+
+     #btn-cntnr{
+      margin-top: -10%;
+      height:50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .button{
+      cursor: pointer;
+      width:25vw;
+      margin-right:0.5vw;
+      height: 7vw;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      margin-left: 1vw;
+      margin-bottom: 5vh;
+    }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1300px) {
+    #container{
+      width:80vw;
+      left:7vw;
+      height:60vh
+  }
+
+   #watch{
+      letter-spacing: 10px;
+      color: rgb(240, 238, 238);
+      font-size: 2.5rem;
+      margin-top: 5vh;
+    }
+    #btn-cntnr{
+      margin-top: -5%;
+      height:50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .button{
+      cursor: pointer;
+      width:50vw;
+      margin-right:0.5vw;
+      height: 10vw;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      margin-left: 1vw;
+      margin-bottom: 5vh;
+    }
+
+
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) , (max-width: 765) {
+  #container{
+      width:80vw;
+      left:7vw;
+      height:60vh
+  }
+
+   #watch{
+      letter-spacing: 10px;
+      color: rgb(240, 238, 238);
+      font-size: 3rem;
+      margin-top: 5vh;
+    }
+    #btn-cntnr{
+      height:50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .button{
+      cursor: pointer;
+      width:50vw;
+      margin-right:0.5vw;
+      height: 10vw;
+      border: none;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      margin-left: 1vw;
+      margin-bottom: 5vh;
+    }
+
+    #btn-cntnr{
+      margin-top: -5%;
+    }
+}
